@@ -1,0 +1,347 @@
+2025-03-06 18:19:43,511 - INFO - \U0001f680 Bot \u0111ang ch\u1ea1y...
+2025-03-06 18:19:44,180 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getMe "HTTP/1.1 200 OK"
+2025-03-06 18:19:44,377 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-06 18:19:44,379 - INFO - Application started
+2025-03-06 18:19:54,426 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:19:55,336 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:19:58,789 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:19:58,790 - ERROR - X\u1ea3y ra l\u1ed7i: no such column: stock_data
+2025-03-06 18:19:58,790 - ERROR - An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Coding\Mywebsite\app.py", line 134, in view_portfolio
+    portfolio = load_portfolio(user_id)
+  File "d:\Coding\Mywebsite\app.py", line 59, in load_portfolio
+    c.execute("SELECT stock_data FROM portfolio WHERE user_id = ?", (user_id,))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: stock_data
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1905, in process_error
+    await callback(update, context)
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-06 18:20:05,019 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:20:05,020 - ERROR - X\u1ea3y ra l\u1ed7i: no such column: stock_data
+2025-03-06 18:20:05,020 - ERROR - An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Coding\Mywebsite\app.py", line 161, in summary
+    portfolio = load_portfolio(user_id)
+  File "d:\Coding\Mywebsite\app.py", line 59, in load_portfolio
+    c.execute("SELECT stock_data FROM portfolio WHERE user_id = ?", (user_id,))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: stock_data
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1905, in process_error
+    await callback(update, context)
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-06 18:20:08,287 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:20:09,165 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:20:11,289 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:20:11,290 - ERROR - X\u1ea3y ra l\u1ed7i: no such column: stock_data
+2025-03-06 18:20:11,290 - ERROR - An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Coding\Mywebsite\app.py", line 134, in view_portfolio
+    portfolio = load_portfolio(user_id)
+  File "d:\Coding\Mywebsite\app.py", line 59, in load_portfolio
+    c.execute("SELECT stock_data FROM portfolio WHERE user_id = ?", (user_id,))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: stock_data
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1905, in process_error
+    await callback(update, context)
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-06 18:20:13,310 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:20:13,311 - ERROR - X\u1ea3y ra l\u1ed7i: no such column: stock_data
+2025-03-06 18:20:13,311 - ERROR - An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Coding\Mywebsite\app.py", line 134, in view_portfolio
+    portfolio = load_portfolio(user_id)
+  File "d:\Coding\Mywebsite\app.py", line 59, in load_portfolio
+    c.execute("SELECT stock_data FROM portfolio WHERE user_id = ?", (user_id,))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: stock_data
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1905, in process_error
+    await callback(update, context)
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-06 18:20:23,519 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:20:33,725 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:20:43,931 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:20:54,135 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:21:04,343 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:21:14,552 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:21:24,759 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:21:34,967 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:21:45,170 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:21:55,379 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:22:05,586 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:22:15,797 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:22:26,041 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:22:36,247 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:22:46,456 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:22:56,660 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:23:06,864 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:23:17,079 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:23:27,283 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:23:37,491 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:23:47,696 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:23:57,901 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:24:08,107 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:24:18,313 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:24:28,518 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:24:38,723 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:24:48,928 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:24:50,148 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:24:50,150 - ERROR - X\u1ea3y ra l\u1ed7i: no such column: stock_data
+2025-03-06 18:24:50,150 - ERROR - An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Coding\Mywebsite\app.py", line 134, in view_portfolio
+    portfolio = load_portfolio(user_id)
+  File "d:\Coding\Mywebsite\app.py", line 59, in load_portfolio
+    c.execute("SELECT stock_data FROM portfolio WHERE user_id = ?", (user_id,))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: stock_data
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HDK\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1905, in process_error
+    await callback(update, context)
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-06 18:26:11,964 - INFO - \U0001f680 Bot \u0111ang ch\u1ea1y...
+2025-03-06 18:26:12,837 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getMe "HTTP/1.1 200 OK"
+2025-03-06 18:26:13,043 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-06 18:26:13,045 - INFO - Application started
+2025-03-06 18:26:13,641 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:26:14,119 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:26:14,598 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:26:20,155 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:26:20,156 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:26:21,011 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:26:27,817 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:26:27,818 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:26:27,820 - ERROR - L\u1ed7i l\u01b0u danh m\u1ee5c cho user 7244982492: table portfolio has no column named stock_data
+2025-03-06 18:26:28,780 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:26:35,274 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:26:35,276 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:26:35,276 - ERROR - L\u1ed7i l\u01b0u danh m\u1ee5c cho user 7244982492: table portfolio has no column named stock_data
+2025-03-06 18:26:36,154 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:26:38,989 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:26:38,990 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:26:39,443 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:26:42,486 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:26:42,487 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:26:42,943 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:26:44,754 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:26:44,756 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:26:45,293 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:26:54,965 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:27:05,194 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:27:15,394 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:27:25,607 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:27:35,814 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:27:47,679 - INFO - K\u1ebft n\u1ed1i SQLite thành công
+2025-03-06 18:27:47,679 - INFO - Kh\u1edfi t\u1ea1o Vnstock thành công
+2025-03-06 18:27:49,982 - INFO - \U0001f680 Bot \u0111ang ch\u1ea1y...
+2025-03-06 18:27:50,727 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getMe "HTTP/1.1 200 OK"
+2025-03-06 18:27:50,932 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-06 18:27:50,934 - INFO - Application started
+2025-03-06 18:27:51,531 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:27:51,533 - INFO - Nh\u1eadn l\u1ec7nh /start t\u1eeb user 7244982492
+2025-03-06 18:27:51,989 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:27:54,578 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:27:54,579 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:27:55,036 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:27:58,967 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:27:58,968 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:27:58,969 - ERROR - L\u1ed7i l\u01b0u danh m\u1ee5c cho user 7244982492: table portfolio has no column named stock_data
+2025-03-06 18:27:59,421 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:28:00,673 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:28:00,674 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:28:01,130 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:28:02,358 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:28:02,359 - ERROR - L\u1ed7i t\u1ea3i danh m\u1ee5c cho user 7244982492: no such column: stock_data
+2025-03-06 18:28:02,866 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:28:12,571 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:28:22,796 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:28:33,001 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:28:43,200 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:28:53,400 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:29:03,597 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:29:13,813 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:29:24,015 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:29:51,559 - WARNING - C\u1ed9t stock_data không t\u1ed3n t\u1ea1i, \u0111ang thêm c\u1ed9t...
+2025-03-06 18:29:51,560 - ERROR - L\u1ed7i k\u1ebft n\u1ed1i SQLite: no such table: portfolio
+2025-03-06 18:31:03,795 - INFO - File portfolio.db \u0111ã t\u1ed3n t\u1ea1i, ki\u1ec3m tra b\u1ea3ng...
+2025-03-06 18:31:03,796 - INFO - T\u1ea1o b\u1ea3ng portfolio...
+2025-03-06 18:31:03,982 - INFO - \u0110ã t\u1ea1o b\u1ea3ng portfolio thành công
+2025-03-06 18:31:03,983 - INFO - K\u1ebft n\u1ed1i SQLite thành công
+2025-03-06 18:31:03,983 - INFO - Kh\u1edfi t\u1ea1o Vnstock thành công
+2025-03-06 18:31:06,144 - INFO - \U0001f680 Bot \u0111ang ch\u1ea1y...
+2025-03-06 18:31:06,926 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getMe "HTTP/1.1 200 OK"
+2025-03-06 18:31:07,126 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-06 18:31:07,128 - INFO - Application started
+2025-03-06 18:31:08,486 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:31:08,487 - INFO - Nh\u1eadn l\u1ec7nh /start t\u1eeb user 7244982492
+2025-03-06 18:31:08,937 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:31:12,121 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:31:12,122 - INFO - Danh m\u1ee5c c\u1ee7a user 7244982492 r\u1ed7ng
+2025-03-06 18:31:12,568 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:31:15,889 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:31:15,891 - INFO - Danh m\u1ee5c c\u1ee7a user 7244982492 r\u1ed7ng
+2025-03-06 18:31:16,036 - INFO - \u0110ã l\u01b0u danh m\u1ee5c cho user 7244982492: {'REE': {'quantity': 900, 'buy_price': 67186.0}}
+2025-03-06 18:31:16,488 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:31:17,968 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:31:17,969 - INFO - Danh m\u1ee5c c\u1ee7a user 7244982492: {'REE': {'quantity': 900, 'buy_price': 67186.0}}
+2025-03-06 18:31:18,646 - ERROR - L\u1ed7i l\u1ea5y giá REE: 'Quote' object has no attribute 'realtime'
+2025-03-06 18:31:19,097 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:31:25,544 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:31:25,546 - INFO - Danh m\u1ee5c c\u1ee7a user 7244982492: {'REE': {'quantity': 900, 'buy_price': 67186.0}}
+2025-03-06 18:31:25,688 - INFO - \u0110ã l\u01b0u danh m\u1ee5c cho user 7244982492: {'REE': {'quantity': 900, 'buy_price': 67186.0}, 'PLX': {'quantity': 600, 'buy_price': 40545.0}}
+2025-03-06 18:31:26,653 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:31:28,703 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:31:28,704 - INFO - Danh m\u1ee5c c\u1ee7a user 7244982492: {'REE': {'quantity': 900, 'buy_price': 67186.0}, 'PLX': {'quantity': 600, 'buy_price': 40545.0}}
+2025-03-06 18:31:29,211 - ERROR - L\u1ed7i l\u1ea5y giá REE: 'Quote' object has no attribute 'realtime'
+2025-03-06 18:31:29,755 - ERROR - L\u1ed7i l\u1ea5y giá PLX: 'Quote' object has no attribute 'realtime'
+2025-03-06 18:31:30,298 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:31:39,965 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:31:50,175 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:32:00,383 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:32:10,593 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:32:20,810 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:32:31,011 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:32:41,217 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:32:51,421 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:33:01,629 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:33:11,840 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:33:22,046 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:33:32,250 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:33:42,455 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:33:52,657 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:34:02,860 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:34:13,066 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:34:23,267 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:34:33,468 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:34:43,668 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:34:53,872 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:35:04,073 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:35:14,280 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:35:23,524 - INFO - File portfolio.db \u0111ã t\u1ed3n t\u1ea1i, ki\u1ec3m tra b\u1ea3ng...
+2025-03-06 18:35:23,526 - INFO - B\u1ea3ng portfolio \u0111ã t\u1ed3n t\u1ea1i, ki\u1ec3m tra c\u1ed9t...
+2025-03-06 18:35:23,526 - INFO - K\u1ebft n\u1ed1i SQLite thành công
+2025-03-06 18:35:23,526 - INFO - Kh\u1edfi t\u1ea1o Vnstock thành công
+2025-03-06 18:35:25,776 - INFO - \U0001f680 Bot \u0111ang ch\u1ea1y...
+2025-03-06 18:35:26,530 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getMe "HTTP/1.1 200 OK"
+2025-03-06 18:35:26,740 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-06 18:35:26,741 - INFO - Application started
+2025-03-06 18:35:27,342 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:35:27,343 - INFO - Nh\u1eadn l\u1ec7nh /start t\u1eeb user 7244982492
+2025-03-06 18:35:27,833 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:35:29,754 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:35:29,755 - INFO - Danh m\u1ee5c c\u1ee7a user 7244982492: {'REE': {'quantity': 900, 'buy_price': 67186.0}, 'PLX': {'quantity': 600, 'buy_price': 40545.0}}
+2025-03-06 18:35:29,755 - ERROR - L\u1ed7i l\u1ea5y giá REE: 'Vnstock' object has no attribute 'stock_realtime'
+2025-03-06 18:35:29,756 - WARNING - Không l\u1ea5y \u0111\u01b0\u1ee3c giá cho REE, dùng 0
+2025-03-06 18:35:29,756 - ERROR - L\u1ed7i l\u1ea5y giá PLX: 'Vnstock' object has no attribute 'stock_realtime'
+2025-03-06 18:35:29,756 - WARNING - Không l\u1ea5y \u0111\u01b0\u1ee3c giá cho PLX, dùng 0
+2025-03-06 18:35:30,291 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:35:33,555 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:35:33,556 - INFO - Danh m\u1ee5c c\u1ee7a user 7244982492: {'REE': {'quantity': 900, 'buy_price': 67186.0}, 'PLX': {'quantity': 600, 'buy_price': 40545.0}}
+2025-03-06 18:35:33,556 - ERROR - L\u1ed7i l\u1ea5y giá REE: 'Vnstock' object has no attribute 'stock_realtime'
+2025-03-06 18:35:33,556 - ERROR - L\u1ed7i l\u1ea5y giá PLX: 'Vnstock' object has no attribute 'stock_realtime'
+2025-03-06 18:35:34,023 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"
+2025-03-06 18:35:43,768 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:35:53,977 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:36:04,181 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:36:14,425 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:36:24,643 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:36:34,848 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:36:45,058 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:36:55,267 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:37:05,488 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:37:15,687 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:37:25,894 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:37:36,098 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:37:46,299 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:37:56,519 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:38:06,722 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:38:16,940 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:38:27,143 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:38:37,344 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:38:47,551 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:38:57,761 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:39:07,963 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:39:18,180 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:39:28,394 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:39:38,628 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:39:48,833 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:39:59,044 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:40:09,247 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:40:19,541 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:40:29,789 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:40:39,997 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:40:50,198 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:41:00,411 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:41:10,619 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:41:20,827 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:41:31,040 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:41:41,271 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:41:51,477 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:42:01,693 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:42:11,944 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:42:22,145 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:42:32,367 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:42:42,575 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:42:52,788 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:43:02,992 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:43:13,202 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:43:23,401 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:43:33,618 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:43:43,844 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:43:54,046 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:44:04,260 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:44:14,466 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:44:24,720 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:44:34,928 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:44:45,136 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:44:55,348 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:45:05,548 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:45:08,017 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/getUpdates "HTTP/1.1 200 OK"
+2025-03-06 18:45:08,019 - INFO - Danh m\u1ee5c c\u1ee7a user 7244982492: {'REE': {'quantity': 900, 'buy_price': 67186.0}, 'PLX': {'quantity': 600, 'buy_price': 40545.0}}
+2025-03-06 18:45:08,019 - ERROR - L\u1ed7i l\u1ea5y giá REE: 'Vnstock' object has no attribute 'stock_realtime'
+2025-03-06 18:45:08,019 - ERROR - L\u1ed7i l\u1ea5y giá PLX: 'Vnstock' object has no attribute 'stock_realtime'
+2025-03-06 18:45:09,003 - INFO - HTTP Request: POST https://api.telegram.org/bot7898257493:AAEBQuFLbum3AjNt6Q6wZmbjS4mn6Mqq-8k/sendMessage "HTTP/1.1 200 OK"

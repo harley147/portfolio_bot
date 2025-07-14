@@ -1,0 +1,45 @@
+{
+  "5321909193": {
+    "CEO": {
+      "quantity": 1100,
+      "buy_price": 18314.0
+    },
+    "CMG": {
+      "quantity": 600,
+      "buy_price": 35310.0
+    },
+    "FPT": {
+      "quantity": 100,
+      "buy_price": 116985.0
+    },
+    "HDC": {
+      "quantity": 2300,
+      "buy_price": 27040.0
+    },
+    "MSN": {
+      "quantity": 400,
+      "buy_price": 65519.00000000001
+    },
+    "v\u0129nhh\u01b0ng": {
+      "AAA": {
+        "quantity": 100,
+        "buy_price": 100000.0
+      }
+    },
+    "__active__": "v\u0129nhh\u01b0ng",
+    "dangthanh": {
+      "TCI": {
+        "quantity": 100,
+        "buy_price": 8770.0
+      },
+      "MSN": {
+        "quantity": 100,
+        "buy_price": 77200.0
+      },
+      "CEO": {
+        "quantity": 100,
+        "buy_price": 18900.0
+      }
+    }
+  }
+}
